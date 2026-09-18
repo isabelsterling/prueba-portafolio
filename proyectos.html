@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de proyectos de Isabel Sterling - Ingeniería de Software con Inteligencia Artificial" />
+  <meta name="author" content="Isabel Sterling" />
+  <meta name="theme-color" content="#7C3AED" id="themeColorMeta" />
+  <title>Proyectos | Isabel Sterling</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/tercer.css" />
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== SCROLL PROGRESS BAR ========== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+  <div class="nav-container">
+    
+    <a href="index.html" class="navbar-brand">
+      <img src="img/logo.svg" alt="Isabel Sterling" class="logo-svg" />
+      <span class="brand-text">Isabel <span class="brand-accent">Sterling</span></span>
+    </a>
+    
+    <ul class="menu" id="menu">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon moon-icon"></i>
+        <i class="fas fa-sun sun-icon"></i>
+      </button>
+      
+      <a href="https://wa.me/51953870664?text=Hola%20Isabel%2C%20vi%20tu%20portafolio%20y%20me%20gust%C3%B3%20tu%20trabajo.%20%C2%BFTe%20parece%20bien%20si%20conversamos%20sobre%20una%20idea%20que%20tengo%3F" 
+         class="btn-whatsapp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      
+      <div class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+  <main>
+    <!-- ============================================================
+         HERO DE PROYECTOS
+         ============================================================ -->
+    <section class="projects-hero" data-aos="fade-up">
+      <div class="container">
+        <div class="projects-hero-content">
+          <span class="section-tag">PORTAFOLIO DE PROYECTOS</span>
+          <h1>Proyectos que convierten <span class="gradient-text">ideas en soluciones</span></h1>
+          <p>
+            Como estudiante de <strong>Ingeniería de Software con Inteligencia Artificial</strong>, 
+            cada proyecto representa una oportunidad para aplicar conceptos de programación, 
+            diseño de sistemas y resolución de problemas del mundo real. Desde aplicaciones web 
+            interactivas hasta videojuegos y prototipos con IA, este portafolio refleja mi 
+            evolución técnica y mi compromiso con el aprendizaje continuo.
+          </p>
+          <div class="projects-hero-meta">
+            <span><i class="fas fa-code"></i> 20+ proyectos</span>
+            <span><i class="fas fa-layer-group"></i> 6 categorías</span>
+            <span><i class="fas fa-rocket"></i> En constante evolución</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ESTADÍSTICAS
+         ============================================================ -->
+    <section class="projects-stats" data-aos="fade-up" data-aos-delay="50">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number" id="totalProjects">0</span>
+            <span class="stat-label">Proyectos Totales</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="jsProjects">0</span>
+            <span class="stat-label">JavaScript</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="pythonProjects">0</span>
+            <span class="stat-label">Python</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="gamesProjects">0</span>
+            <span class="stat-label">Videojuegos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROYECTOS DESTACADOS
+         ============================================================ -->
+    <section class="featured-projects-section" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PROYECTOS DESTACADOS</span>
+          <h2>Los proyectos que mejor representan mis <span class="gradient-text">habilidades</span></h2>
+          <p>Una selección de los desarrollos más completos y significativos de mi portafolio</p>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FILTROS
+         ============================================================ -->
+    <section class="filters-section" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="filters-container">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-th-large"></i> Todos
+          </button>
+          <button class="filter-btn" data-filter="javascript">
+            <i class="fab fa-js"></i> JavaScript
+          </button>
+          <button class="filter-btn" data-filter="productividad">
+            <i class="fas fa-chart-line"></i> Productividad
+          </button>
+          <button class="filter-btn" data-filter="ia">
+            <i class="fas fa-brain"></i> IA
+          </button>
+          <button class="filter-btn" data-filter="python">
+            <i class="fab fa-python"></i> Python
+          </button>
+          <button class="filter-btn" data-filter="herramientas">
+            <i class="fas fa-tools"></i> Herramientas
+          </button>
+          <button class="filter-btn" data-filter="juegos">
+            <i class="fas fa-gamepad"></i> Juegos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTENEDOR DINÁMICO DE CATEGORÍAS
+         El JS genera todo el contenido aquí
+         ============================================================ -->
+    <section class="projects-section" data-aos="fade-up" data-aos-delay="150">
+      <div class="container" id="projectsContainer"></div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+         ============================================================ -->
+    <section class="cta" data-aos="fade-up">
+      <div class="container">
+        <div class="cta-content">
+          <h2>¿Te interesa <span class="gradient-text">colaborar</span> conmigo?</h2>
+          <p>Estoy abierta a nuevos proyectos, pasantías y oportunidades de aprendizaje en el mundo del desarrollo de software e inteligencia artificial.</p>
+          <a href="contacto.html" class="btn btn-primary btn-large">
+            <i class="fas fa-comment-dots"></i> Hablemos
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Isabel Sterling - Todos los derechos reservados.</p>
+      <p class="footer-credit">Diseñado y desarrollado por <a href="index.html">Isabel Sterling</a></p>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÓN VOLVER ARRIBA ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
